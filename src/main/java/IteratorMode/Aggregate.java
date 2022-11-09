@@ -1,4 +1,4 @@
-package IteratorMode;
+package iteratorMode;
 
 /**
  * Aggregate 接口是所要遍历的集合的接口，

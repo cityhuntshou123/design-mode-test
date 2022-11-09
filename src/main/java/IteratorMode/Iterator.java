@@ -1,4 +1,4 @@
-package IteratorMode;
+package iteratorMode;
 
 /**
  * Iterator 接口用于遍历集合中的元素，

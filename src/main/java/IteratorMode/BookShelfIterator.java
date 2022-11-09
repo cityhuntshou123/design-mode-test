@@ -1,4 +1,4 @@
-package IteratorMode;
+package iteratorMode;
 
 /**
  * @author lipeitao

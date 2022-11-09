@@ -1,8 +1,8 @@
-package IteratorMode;
+package iteratorMode;
 
 /**
  * @author lipeitao
- * @apiNote
+ * @apiNote 行为型模式 - 迭代模式
  * @date 2022/11/8 22:13
  */
 public class IteratorModeTest {
@@ -13,6 +13,7 @@ public class IteratorModeTest {
         bookShelf.appendBook(new Book("Bible"));
         bookShelf.appendBook(new Book("Cinderella"));
         bookShelf.appendBook(new Book("Daddy-Long-Legs"));
+        bookShelf.appendBook(new Book("Grimm's Fairy Tales"));
         Iterator iterator = bookShelf.iterator();
         while (iterator.hasNext()) {
             Book bookShelf1 = (Book) iterator.next();

@@ -1,5 +1,8 @@
-package IteratorMode;
+package iteratorMode;
 
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author lipeitao
@@ -8,19 +11,19 @@ package IteratorMode;
  */
 public class BookShelf implements Aggregate{
 
-    private Book[] books;
-    private int last = 0;
+    private List books;
+    //private int last = 0;
     public BookShelf(int maxsize) {
-        this.books = new Book[maxsize];
+        this.books = new ArrayList(maxsize);
     }
 
     public void appendBook(Book book) {
-        this.books[last] = book;
-        last++;
+        books.add(book);
+        //last++;
     }
 
     public int getLength() {
-        return last;
+        return books.size() ;
     }
 
     @Override
@@ -33,7 +36,7 @@ public class BookShelf implements Aggregate{
             throw new RuntimeException("index must more than 0!");
         }
 
-        return books[index];
+        return (Book) books.get(index);
     }
 
 }
